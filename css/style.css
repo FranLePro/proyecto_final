@@ -72,6 +72,11 @@ nav ul li a:hover{
     grid-area: imgGalletas;
 }
 
+.p1{
+    grid-area: p;
+    width: 100%;
+}
+
 .containerIndex2{
     display: grid; 
     grid-template-columns: 33.3% 33.3% 33.3%; 
