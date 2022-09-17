@@ -75,8 +75,12 @@ nav ul li a:hover{
 .p1{
     grid-area: p;
     width: 100%;
+    transition: all 3s ease;
 }
 
+.p1:hover{
+    transform: rotate(10deg);
+}
 .containerIndex2{
     display: grid; 
     grid-template-columns: 33.3% 33.3% 33.3%; 
