@@ -1,0 +1,79 @@
+@import "reset";
+
+body{
+    color: white;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
+    background: #627d4d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #627d4d 0%, #1f3b08 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #627d4d 0%,#1f3b08 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #627d4d 0%,#1f3b08 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=0 ); /* IE6-9 */
+    font-family: 'Bowlby One SC', cursive;
+    p{
+        padding: 10px;
+        margin: 5px 10px;
+        width: 600px;
+        height: 200px;
+        text-align: center;
+    }
+}
+
+@import "header";
+
+@import "main";
+
+@import "footer";
+
+@media screen and (max-width:480px){
+    /* INDEX */
+    .containerIndex1{
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: min-content min-content min-content;  
+        grid-template-areas: 
+        "imgGalletas imgGalletas"
+        "imgGalletas imgGalletas"
+        "p p"; 
+    }
+
+    .containerIndex2{ 
+        grid-template-columns: 100%; 
+        grid-template-rows: min-content min-content min-content min-content min-content min-content ;  
+        grid-template-areas: 
+        "imgBrownie"
+        "p2"
+        "imgTrufas"
+        "p3"
+        "imgCafe"
+        "p4";
+    }
+    /* fin INDEX */
+    /* PasteleriaCannabica */
+
+    .containerPasteleriaCannabica{ 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 100%; 
+        grid-template-rows: min-content min-content;  
+        grid-template-areas: 
+          "imgPasteleriaCannabica"
+          "p5";
+    }
+
+    /* fin PasteleriaCannabica */
+
+    /* Servicios */
+    
+    .containerServicios{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content min-content min-content min-content;
+        grid-auto-rows: 1fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "imgServicios1"
+          "p6"
+          "imgServicios2"
+          "p7"
+          "imgServicios3"
+          "p8";
+    }
+}

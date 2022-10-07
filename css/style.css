@@ -1,286 +1,210 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
 
-body{
-    color: white;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
-background: #627d4d; /* Old browsers */
-background: -moz-linear-gradient(top,  #627d4d 0%, #1f3b08 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #627d4d 0%,#1f3b08 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #627d4d 0%,#1f3b08 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=0 ); /* IE6-9 */
-font-family: 'Bowlby One SC', cursive;
-
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Bungee Shade', cursive;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-}
-
-p{
+body {
+  color: white;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
+  background: #627d4d;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #627d4d 0%, #1f3b08 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #627d4d 0%, #1f3b08 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #627d4d 0%, #1f3b08 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=0 );
+  /* IE6-9 */
+  font-family: 'Bowlby One SC', cursive; }
+  body p {
     padding: 10px;
     margin: 5px 10px;
     width: 600px;
     height: 200px;
-    text-align: center;
-}
+    text-align: center; }
 
-nav{
-    padding: 1rem;
-}
+header h1 {
+  font-family: 'Bungee Shade', cursive;
+  padding: 20px;
+  margin: 10px;
+  text-align: center; }
 
-nav ul{
+header nav {
+  padding: 1rem; }
+  header nav .colorMio {
+    background-color: #8A8C46; }
+  header nav ul {
     list-style: none;
     background-color: #8A8C46;
     height: 80px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-}
-
-nav ul li a{
-    color: white;
-    background-color: #1f3b08;
-    text-decoration: none;
-    padding: .5rem 1rem;
-}
-
-nav ul li a:hover{
-    color: #8A8C46;
-}
-
-.colorMio{
-    background-color: #8A8C46;
-}
+    align-items: center; }
+    header nav ul li {
+      background-color: #1f3b08;
+      text-decoration: none;
+      padding: .5rem 1rem; }
+      header nav ul li a {
+        color: white; }
+        header nav ul li a:hover {
+          color: #8A8C46; }
 
 /* INDEX */
+main section .containerIndex1 {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-areas: ". imgGalletas imgGalletas imgGalletas ." ". imgGalletas imgGalletas imgGalletas ." ". p p p ."; }
 
-.containerIndex1{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%; 
-    grid-template-rows: min-content min-content min-content;  
-    grid-template-areas: 
-    ". imgGalletas imgGalletas imgGalletas ."
-    ". imgGalletas imgGalletas imgGalletas ."
-    ". p p p ."; 
-}
+main section .imgGalletas {
+  width: 100%;
+  grid-area: imgGalletas; }
 
-.imgGalletas{
-    width: 100%;
-    grid-area: imgGalletas;
-}
+main section .p1 {
+  grid-area: p;
+  width: 100%;
+  transition: all 3s ease; }
+  main section .p1:hover .p1:hover {
+    transform: rotate(10deg); }
 
-.p1{
-    grid-area: p;
-    width: 100%;
-    transition: all 3s ease;
-}
+main section .containerIndex2 {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-areas: "imgBrownie imgTrufas imgCafe" "imgBrownie imgTrufas imgCafe" "p2 p3 p4"; }
 
-.p1:hover{
-    transform: rotate(10deg);
-}
-.containerIndex2{
-    display: grid; 
-    grid-template-columns: 33.3% 33.3% 33.3%; 
-    grid-template-rows: min-content min-content min-content;  
-    grid-template-areas: 
-    "imgBrownie imgTrufas imgCafe"
-    "imgBrownie imgTrufas imgCafe"
-    "p2 p3 p4";
-}
-      
-.imgBrownie{
-    grid-area: imgBrownie;
-    width: 100%;
-}
-      
-.imgTrufas{
-    grid-area: imgTrufas;
-    width: 100%;
-}
-      
-.imgCafe{
-    grid-area: imgCafe;
-    width: 100%;
-}
-      
-.p2{
-    grid-area: p2;
-    width: 100%;
-}
-      
-.p3{
-    grid-area: p3;
-    width: 100%;
-}
-      
-.p4{
-    grid-area: p4;
-    width: 100%;
-}
+main section div .imgBrownie {
+  grid-area: imgBrownie;
+  width: 100%; }
+
+main section div .p2 {
+  grid-area: p2;
+  width: 100%; }
+
+main section div .imgTrufas {
+  grid-area: imgTrufas;
+  width: 100%; }
+
+main section div .p3 {
+  grid-area: p3;
+  width: 100%; }
+
+main section div .imgCafe {
+  grid-area: imgCafe;
+  width: 100%; }
+
+main section div .p4 {
+  grid-area: p4;
+  width: 100%; }
 
 /* fin INDEX */
-
 /* pasteleriaCannabica */
+main .containerPasteleriaCannabica {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 25% 25% 25% 50%;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-areas: ". imgPasteleriaCannabica imgPasteleriaCannabica ." ". imgPasteleriaCannabica imgPasteleriaCannabica ." ". p5 p5 ."; }
 
-.containerPasteleriaCannabica{
-    display: grid; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 25% 25% 25% 50%; 
-    grid-template-rows: min-content min-content min-content;  
-    grid-template-areas: 
-      ". imgPasteleriaCannabica imgPasteleriaCannabica ."
-      ". imgPasteleriaCannabica imgPasteleriaCannabica ."
-      ". p5 p5 .";
-}
+main .imgPasteleriaCannabica {
+  grid-area: imgPasteleriaCannabica;
+  width: 100%;
+  display: flex;
+  transition: all 3s ease; }
+  main .imgPasteleriaCannabica:hover {
+    transform: rotate(10deg); }
 
-.imgPasteleriaCannabica{
-    grid-area: imgPasteleriaCannabica;
-    width: 100%;
-    display: flex;
-    transition: all 3s ease;
-}
-
-.imgPasteleriaCannabica:hover{
-    transform: rotate(10deg);
-}
-
-.p5{
-    grid-area: p5;
-    width: 100%;
-    display: flex;
-}
+main .p5 {
+  grid-area: p5;
+  width: 100%;
+  display: flex; }
 
 /* fin pasteleriaCannabica */
-
 /* SERVICIOS */
+main section .containerServicios {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: min-content min-content min-content;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "imgServicios1 imgServicios1 . p6 p6" "p7 p7 . imgServicios2 imgServicios2" "imgServicios3 imgServicios3 . p8 p8"; }
 
-.containerServicios{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+main section .imgServicios1 {
+  grid-area: imgServicios1;
+  width: 100%; }
+
+main section .p6 {
+  grid-area: p6;
+  width: 100%; }
+
+main section .imgServicios2 {
+  grid-area: imgServicios2;
+  width: 60%; }
+
+main section .p7 {
+  grid-area: p7;
+  width: 100%; }
+
+main section .imgServicios3 {
+  grid-area: imgServicios3;
+  width: 100%; }
+
+main section .p8 {
+  grid-area: p8;
+  width: 100%; }
+
+/* fin SERVICIOS */
+/* GALERIAdeFOTOS */
+main h1 {
+  font-family: 'Bungee Shade', cursive;
+  padding: 20px;
+  margin: 10px;
+  text-align: center; }
+
+/* fin GALERIAdeFOTOS */
+/* CONTACTO */
+main h3 {
+  font-family: 'Bungee Shade', cursive;
+  padding: 20px;
+  margin: 10px;
+  text-align: center; }
+
+main div .colorMio {
+  background-color: #8A8C46; }
+
+/* fin CONTACTO */
+footer {
+  background-color: black; }
+  footer h6 {
+    font-family: 'Bungee Shade', cursive;
+    padding: 20px;
+    margin: 10px;
+    text-align: center; }
+
+@media screen and (max-width: 480px) {
+  /* INDEX */
+  .containerIndex1 {
+    grid-template-columns: 50% 50%;
     grid-template-rows: min-content min-content min-content;
+    grid-template-areas: "imgGalletas imgGalletas" "imgGalletas imgGalletas" "p p"; }
+  .containerIndex2 {
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: "imgBrownie" "p2" "imgTrufas" "p3" "imgCafe" "p4"; }
+  /* fin INDEX */
+  /* PasteleriaCannabica */
+  .containerPasteleriaCannabica {
+    grid-auto-rows: 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: "imgPasteleriaCannabica" "p5"; }
+  /* fin PasteleriaCannabica */
+  /* Servicios */
+  .containerServicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
     grid-auto-rows: 1fr;
     grid-auto-flow: row;
-    grid-template-areas:
-      "imgServicios1 imgServicios1 . p6 p6"
-      "p7 p7 . imgServicios2 imgServicios2"
-      "imgServicios3 imgServicios3 . p8 p8";
-}
-  
-.imgServicios1{
-    grid-area: imgServicios1;
-    width: 100%;
-}
-  
-.imgServicios2{
-    grid-area: imgServicios2;
-    width: 60%;
-}
-  
-.imgServicios3{
-    grid-area: imgServicios3;
-    width: 100%;
-}
-  
-.p6{
-    grid-area: p6;
-    width: 100%;
-}
-  
-.p7{
-    grid-area: p7;
-    width: 100%;
-}
-  
-.p8{
-    grid-area: p8;
-    width: 100%;
-}
-  
-/* fin SERVICIOS */
-
-/* GALERIAdeFOTOS */
-
-.img{
-    width: 500px;
-    height: 250px;
-}
-
-.main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-/* GALERIAdeFOTOS */
-
-
-
-
-
-
-footer{
-    background-color: black;
-}
-
-
-@media screen and (max-width:480px){
-    /* INDEX */
-    .containerIndex1{
-        grid-template-columns: 50% 50%; 
-        grid-template-rows: min-content min-content min-content;  
-        grid-template-areas: 
-        "imgGalletas imgGalletas"
-        "imgGalletas imgGalletas"
-        "p p"; 
-    }
-
-    .containerIndex2{ 
-        grid-template-columns: 100%; 
-        grid-template-rows: min-content min-content min-content min-content min-content min-content ;  
-        grid-template-areas: 
-        "imgBrownie"
-        "p2"
-        "imgTrufas"
-        "p3"
-        "imgCafe"
-        "p4";
-    }
-    /* fin INDEX */
-    /* PasteleriaCannabica */
-
-    .containerPasteleriaCannabica{ 
-        grid-auto-rows: 1fr; 
-        grid-template-columns: 100%; 
-        grid-template-rows: min-content min-content;  
-        grid-template-areas: 
-          "imgPasteleriaCannabica"
-          "p5";
-    }
-
-    /* fin PasteleriaCannabica */
-
-    /* Servicios */
-    
-    .containerServicios{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: min-content min-content min-content min-content min-content min-content;
-        grid-auto-rows: 1fr;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "imgServicios1"
-          "p6"
-          "imgServicios2"
-          "p7"
-          "imgServicios3"
-          "p8";
-    }
-}
+    grid-template-areas: "imgServicios1" "p6" "imgServicios2" "p7" "imgServicios3" "p8"; } }
