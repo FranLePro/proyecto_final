@@ -87,11 +87,6 @@ main{
     .imgPasteleriaCannabica{
         grid-area: imgPasteleriaCannabica;
         width: 100%;
-        display: flex;
-        transition: all 3s ease;
-        &:hover{
-            transform: rotate(10deg);
-        }
     }
     .p5{
         grid-area: p5;

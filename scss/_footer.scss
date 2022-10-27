@@ -1,4 +1,42 @@
 footer{
+    .redes-container{
+        display: flex;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
+        ul li{
+            display: inline-block;
+            margin: 0 5px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            a{
+                display: block;
+                padding: 0 10px;
+                background-color: #333;
+                color: #fff;
+                line-height: 50px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .redes-container ul li .facebook:hover{
+        background-color: $facebook;
+    }
+
+    .redes-container ul li .instagram:hover{
+        background-color: $instagram;
+    }
+
+    .redes-container ul li .whatsapp:hover{
+        background-color: $whatsapp;
+    }
+
+    .redes-container ul li .telegram:hover{
+        background-color: $telegram;
+    }
+
     background-color: black;
     h6{
         font-family: 'Bungee Shade', cursive;

@@ -109,11 +109,7 @@ main .containerPasteleriaCannabica {
 
 main .imgPasteleriaCannabica {
   grid-area: imgPasteleriaCannabica;
-  width: 100%;
-  display: flex;
-  transition: all 3s ease; }
-  main .imgPasteleriaCannabica:hover {
-    transform: rotate(10deg); }
+  width: 100%; }
 
 main .p5 {
   grid-area: p5;
@@ -176,6 +172,32 @@ main div .colorMio {
 /* fin CONTACTO */
 footer {
   background-color: black; }
+  footer .redes-container {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center; }
+    footer .redes-container ul li {
+      display: inline-block;
+      margin: 0 5px;
+      width: 50px;
+      height: 50px;
+      text-align: center; }
+      footer .redes-container ul li a {
+        display: block;
+        padding: 0 10px;
+        background-color: #333;
+        color: #fff;
+        line-height: 50px;
+        font-size: 18px; }
+  footer .redes-container ul li .facebook:hover {
+    background-color: #3b5999; }
+  footer .redes-container ul li .instagram:hover {
+    background-color: #e4405f; }
+  footer .redes-container ul li .whatsapp:hover {
+    background-color: #25D366; }
+  footer .redes-container ul li .telegram:hover {
+    background-color: #0077B5; }
   footer h6 {
     font-family: 'Bungee Shade', cursive;
     padding: 20px;
